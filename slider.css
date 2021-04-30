@@ -1,0 +1,111 @@
+body{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(248, 206, 69);
+background-image: url('./images/back2.jpeg');
+background-size: cover;
+background-repeat: no-repeat;
+font-family: 'Nothing You Could Do', cursive;
+}
+h1{
+display: block;
+font-size: 40px;
+font-weight: 700;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 30px;
+margin-bottom: 50px;
+}
+.slider{
+display: flex;
+width: 1000px;
+height: 520px;
+align-content: center;
+justify-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+.arrow {
+  display: flex;
+  align-self: center;
+  border: solid rgb(248, 206, 69);
+  border-width: 0 5px 5px 0;
+  border-radius: 5%;
+  display: inline-block;
+  padding: 3px;
+  width: 50px;
+  height: 50px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(135deg);
+}
+
+input{
+appearance: none;
+border:none;    
+font-size: 100px;
+font-weight:100;
+}
+.frame{
+width: 800px;
+height: 500px;
+overflow: hidden;
+object-fit: contain;
+box-shadow: 0px 1px 20px 1px rgb(22, 22, 22);
+}
+.imgWrapper{
+display:none;
+opacity: 0;
+align-content: center;
+align-items: center;
+justify-items: center;
+flex-wrap: wrap;
+height:500px;
+object-fit: contain;
+overflow: hidden;
+transition: opacity 0.3;
+-webkit-transition: opacity 0.3s;
+}
+.imgWrapperVisible{
+display: flex;
+opacity: 1;
+align-content: center;
+align-items: center;
+justify-items: center;
+flex-wrap: wrap;
+height:500px;
+object-fit: contain;
+overflow: hidden;
+}
+figCaption{
+display: flex;
+position: fixed;
+color: rgb(29, 29, 28);
+font-size: 20px;
+align-self: flex-end;
+width:900px;
+height: 20px;
+margin: 10px;
+z-index: 1;
+}
+.dots{
+display: flex;
+justify-content: center;
+align-items: center ;
+margin-top: 10px;
+}
+.dot{
+  height: 10px;
+  width: 10px;
+  background-color: rgb(248, 206, 69);
+  border-radius: 50%;
+  display: inline-block;
+  margin:5px
+}
